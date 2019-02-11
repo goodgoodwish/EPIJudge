@@ -17,7 +17,7 @@ def binary_tree_depth_order(tree):
         if level_nodes:
             results.append(level_nodes)
 
-    return results
+    return results 
 
 
 if __name__ == '__main__':
