@@ -7,8 +7,20 @@ from test_framework.test_utils import enable_executor_hook
 
 
 def lca(tree, node0, node1):
-    # TODO - you fill in here.
-    return None
+    def dfs(root, A, B):
+        if not root:
+            return
+        if root is A or root is B:
+            return root
+        left_node = dfs(root.left, A, B)
+        right_node = dfs(root.right, A, B)
+        if left_node and right_node:
+            return root
+        if left_node:
+            return left_node
+        if right_node:
+            return right_node
+    return dfs(tree, node0, node1)
 
 
 @enable_executor_hook
