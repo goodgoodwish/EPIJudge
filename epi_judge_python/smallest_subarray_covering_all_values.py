@@ -4,12 +4,12 @@ import functools
 from test_framework import generic_test
 from test_framework.test_utils import enable_executor_hook
 
-Subarray = collections.namedtuple('Subarray', ('start', 'end'))
-
+Subarr = collections.namedtuple('Subarray', ('start', 'end'))
 
 def find_smallest_sequentially_covering_subset(paragraph, keywords):
-    # TODO - you fill in here.
-    return Subarray(0, 0)
+
+
+    return result
 
 
 @enable_executor_hook
